@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6 1fr);
+    grid-template-rows: 100px auto auto auto 200px;
+    height: 100vh;
+
+
+
+}
+
+.galery__header {
+    grid-column: span 6;
+    background-color: rgb(213, 233, 233);
+    font-size: 30px;
+    padding-left: 20px;
+    line-height: 80px;
+    text-align: center;
+}
+
+
+.galery__text--1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.galery__img--1 {
+    grid-column: span 3;
+    grid-row: span 2;
+    background-color: rgb(66, 73, 63);
+    background: url(imagens/download\ \(2\).jpg)no-repeat center center/cover;
+}
+
+.galery__img--2 {
+
+    background-color: rgb(70, 173, 66);
+    background: url(imagens/download\ \(1\).jpg)no-repeat center center/cover;
+}
+
+.galery__img--3 {
+
+    background-color: rgb(72, 98, 216);
+    background: url(imagens/download\ \(3\).jpg)no-repeat center center/cover;
+}
+
+.galery__img--4 {
+
+    background-color: rgb(14, 22, 97);
+    background: url(imagens/download\ \(5\).jpg)no-repeat center center/cover;
+    grid-column: span 1;
+
+}
+
+.galery__img--5 {
+
+    background-color: rgb(0, 248, 248);
+    background: url(imagens/download\ \(6\).jpg)no-repeat center center/cover;
+}
+
+.galery__img--6 {
+
+    grid-column: span 2;
+    background-color: rgb(1, 73, 73);
+    background: url(imagens/download\ \(1\).jpg)no-repeat center center/cover;
+
+}
+
+.galery__text--2 {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: rgb(11, 36, 36);
+}
+
+.galery__img--7 {
+    grid-column: span 3;
+    grid-row: span 2;
+    background-color: rgb(10, 104, 104);
+    background: url(imagens/download\ \(7\).jpg)no-repeat center center/cover;
+}
+
+.galery__img--8 {
+    grid-column: span 3;
+    grid-row: span 2;
+    background-color: rgb(9, 10, 10);
+    background: url(imagens/images.jpg)no-repeat center center/cover;
+}
+
+.gallery>div {
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@media(max-width:800px) {
+    .gallery {
+        display:table;
+        grid-template-columns: auto;
+
+    }
+}
